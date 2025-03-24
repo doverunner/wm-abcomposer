@@ -1,17 +1,17 @@
-# ABComposer Sample for PallyCon DRM CLI Packager
+# ABComposer Sample for DoveRunner DRM CLI Packager
 
-This app is a sample program that composes DASH / HLS / CMAF streams to enable Pallycon Forensic Watermark.
+This app is a sample program that composes DASH / HLS / CMAF streams to enable DoveRunner Forensic Watermark.
 
 ## Requirements
 
 This app is implemented to support the following cases:
 - Input media
-  - preprocessed by the PallyCon Forensic Watermark [Preprocessor SDK](https://pallycon.com/docs/en/forensic-watermarking/preprocessing/preprocessor-library/) or [FFmpeg Preprocessor Filter](https://pallycon.com/docs/en/forensic-watermarking/preprocessing/ffmpeg-filter/)
-  - packaged by the PallyCon DRM CLI Packager
+  - preprocessed by the DoveRunner Forensic Watermark [Preprocessor SDK](https://doverunner.com/docs/en/forensic-watermarking/preprocessing/preprocessor-library/) or [FFmpeg Preprocessor Filter](https://doverunner.com/docs/en/forensic-watermarking/preprocessing/ffmpeg-filter/)
+  - packaged by the DoveRunner DRM CLI Packager
 - CDN Embedder
   - [Akamai Adaptive Media Delivery Watermarking](https://techdocs.akamai.com/adaptive-media-delivery/docs/add-wmk)
     - Notice: It does not support CMAF.
-  - AWS CloudFront CDN and [AWS CloudFront Embedder by PallyCon](https://pallycon.com/docs/en/forensic-watermarking/embedding/cloudfront-embedder/)
+  - AWS CloudFront CDN and [AWS CloudFront Embedder by PallyCon](https://doverunner.com/docs/en/forensic-watermarking/embedding/cloudfront-embedder/)
 
 The other cases are not considered.
 
@@ -32,6 +32,6 @@ And if the `<target dir>` already exists, it exits without composing. If you use
 
 ***
 
-https://pallycon.com | obiz@inka.co.kr (Global), cbiz@inka.co.kr (Korea)
+https://doverunner.com 
 
-Copyright 2024 INKA Entworks. All Rights Reserved.
+Copyright 2025 DoveRunner Inc. All Rights Reserved.
