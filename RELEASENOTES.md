@@ -1,5 +1,8 @@
 # Release notes
 
+### 1.2.1 (2025-06-04)
+- Apply the changed company name
+
 ### 1.2 (2024-06-27)
 - Support mp4/text vtt subtitle
 - Add `--overwrite` option

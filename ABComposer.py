@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-IT IS ONLY FIT TO PALLYCON DRM CLI PACKAGER.
+IT IS ONLY FIT TO DOVERUNNER DRM CLI PACKAGER.
 IF YOU USE A DIFFERENT PACKAGER, YOU SHOULD NEED TO MODIFY THE CODE.
 '''
 
@@ -11,7 +11,7 @@ import re
 import shutil
 import sys
 
-VERSION = '1.2'
+VERSION = '1.2.1'
 ENABLE_PRINT_COMPOSING_ITEM = True
 
 class ABComposer():
@@ -428,13 +428,17 @@ class ABComposer():
 
 
 def usage():
-    print(f'ABComposer v{VERSION}, Copyright 2024 INKA Entworks')
+    print(f'ABComposer v{VERSION}, Copyright 2025 DoveRunner Inc.')
     print(f'  usage: {sys.argv[0]} <stream dir 0> <stream dir 1> <target dir> [--remove_src] [--overwrite]')
     sys.exit(-1)
 
 
 def main():
     args = sys.argv[1:]
+
+    if '-v' in args:
+        print(f'Doverunner / ABComposer v{VERSION}')
+        return 0
 
     remove_src = False
     if '--remove_src' in args:
